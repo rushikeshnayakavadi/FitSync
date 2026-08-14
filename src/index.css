@@ -366,3 +366,83 @@ button {
         grid-template-columns: 1fr;
     }
 }
+.nutrition-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.food-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.food-selector label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.food-selector select,
+.selected-food select {
+    padding: 12px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    background: #ffffff;
+    font: inherit;
+}
+
+.selected-foods {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.selected-food {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 14px;
+}
+
+.selected-food p {
+    margin: 5px 0 0;
+    font-size: 12px;
+    color: #737373;
+}
+
+.nutrition-summary {
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 20px;
+}
+
+.nutrition-summary h2 {
+    margin: 8px 0 20px;
+    font-size: 32px;
+}
+
+.macro-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.macro-grid span,
+.macro-grid strong {
+    display: block;
+}
+
+.macro-grid span {
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #737373;
+}
+
+.nav-active {
+    transform: scale(1.15);
+}
